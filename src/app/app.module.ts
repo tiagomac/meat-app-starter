@@ -1,3 +1,4 @@
+import { OrderService } from './order/order.service';
 import { FormsModule } from '@angular/forms';
 import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-cart.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -52,6 +53,7 @@ import { OrderItemsComponent } from './order/order-items/order-items.component';
   providers: [
     RestaurantsService,
     ShoppingCartService,
+    OrderService,
     {provide: LOCALE_ID, useValue: 'pt-BR'}
   ],
   bootstrap: [AppComponent]
