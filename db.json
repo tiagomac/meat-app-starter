@@ -370,5 +370,19 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "sdgsdfgsfd",
+      "number": "4534",
+      "optionalAddress": "sdfgsdfg",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 3,
+          "menuId": "burger"
+        }
+      ],
+      "id": 1
+    }
+  ]
 }
