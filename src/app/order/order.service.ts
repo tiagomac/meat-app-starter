@@ -9,7 +9,8 @@ import { MEAT_API } from 'app/app.api';
 @Injectable()
 export class OrderService {
 
-    constructor(private cartService: ShoppingCartService,
+    constructor(
+        private cartService: ShoppingCartService,
         private http: Http) { }
 
     itemsValue(): number {
@@ -39,6 +40,7 @@ export class OrderService {
             JSON.stringify(order),
             new RequestOptions({ headers: headers }))
             .map(response => response.json())
+            .map(order => order.id)
     }
 
     clear() {
